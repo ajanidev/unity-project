@@ -37,12 +37,12 @@ sudo -i -u jenkins
 sudo su -s /bin/bash jenkins
 
 # GitHub
-The scripts used for this project can be clone from https://github.com/WinifredZenabuin/UnityProject.
-I also confihured github-webhook so that ounce the source code is modified jenkins will srtigger a build.  
+The scripts used for this project can be cloned from https://github.com/ajanidev/unity-project.
+I also configured a github-webhook so that once the source code is modified, Jenkins will trigger a build.  
 # Dockerfile
-we are also using the created package (artifacts) to create a docker imgae for our application. Here docker is used for containerisation.  
+we are also using the created package (artifacts) to create a docker image for our application. Here, docker is used for containerisation.  
 ```docker
-docker build -t legah2045/springboot-app .
+docker build -t codestein/springboot-app .
 ```
 # Kubernetes Manifest files
 This files will deploy a "Spring-boot-app" with a MongoDB. Our application and database is deployed using Replicat Set, ConFigMap, Ingress Controller, Secrets, PVC, StorageClass, HPA, and Cluster-Auto-Scaling.
@@ -75,7 +75,7 @@ Create docker image using Dockerfile
 
 
 ```docker
-docker build -t legah2045/springboot-app .
+docker build -t codestein/springboot-app .
 ```
 
 ## Deploy Application Using EKS Cluster 
@@ -90,4 +90,4 @@ docker ps -a
 ```
 
 ## License
-[Winifred Zenabuin](https://www.linkedin.com/in/winifred-zenabuin-1b430b194/)
+[Chuk Opara](https://www.linkedin.com/in/chukwuma-opara-1b8b08281/)
